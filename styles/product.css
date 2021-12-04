@@ -1,0 +1,208 @@
+﻿@font-face {
+    font-family: 'Tanha-FD';
+    src: url('../fonts/Tanha-FD.eot') format('eot'), url('../fonts/Tanha-FD.ttf') format('truetype'), url('../fonts/Tanha-FD.woff') format('woff'), url('../fonts/Tanha-FD.woff2') format('woff2');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tanha-FD';
+}
+
+ :root {
+    --mywhite: white;
+    --mypink: rgb(252, 126, 147);
+    --lightpink: rgb(238, 210, 215);
+}
+
+
+/***************************************section5****************** */
+
+.section1 {
+    max-width: 1400px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.section1 .filter-part {
+    width: 100%;
+    height: 2vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    color: var(--mypink);
+}
+
+.section1 .filter-part .button-box {
+    font-size: 1vw;
+    width: 12vw;
+    height: 90%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+    box-shadow: inset 2px 2px 10px rgb(238, 189, 189)
+}
+
+.section1 .filter-part .button-box span {
+    width: 6vw;
+    background: rgba(255, 210, 218, 0.965);
+    height: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+.section1 .filter-part .button-box a {
+    text-decoration: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.section1 .filter-part a:hover {
+    color: var(--mypink);
+}
+
+.section1 .pro-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.8vw;
+    overflow-x: hidden;
+    padding: 5%;
+    background: rgba(202, 186, 192, 0.507);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.section1 .pro-container .box {
+    width: 17vw;
+    height: 40vh;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: rgba(251, 251, 251, 0.616);
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.section1 .pro-container .box.show {
+    display: flex;
+}
+
+.section1 .pro-container .box:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.section1 .pro-container .box img {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.section1 .pro-container .box p {
+    font-size: 1rem;
+}
+
+.section1 .pro-container .box span {
+    font-size: 0.8rem;
+}
+
+.section1 .pro-container .box .shopbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.section1 .pro-container .box .shopbox span {
+    font-size: 1.2vw;
+    margin-right: 5%;
+}
+
+.section1 .pro-container .box .shopbox a {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--mypink);
+    color: var(--mywhite);
+    text-align: center;
+    font-size: 1vw;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/***************************************footer****************** */
+
+@media screen and (max-width:900px) {
+    .section1 .pro-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.8vw;
+        overflow-x: hidden;
+        padding: 5%;
+    }
+    .section1 .pro-container .box {
+        width: 22vw;
+        height: 32vh;
+        margin-top: 1vh;
+    }
+    .section1 .pro-container .box p {
+        font-size: 2vw;
+    }
+    .section1 .pro-container .box span {
+        font-size: 1.2vw;
+    }
+    .section1 .pro-container .box .shopbox {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+    }
+    .section1 .pro-container .box .shopbox span {
+        font-size: 2vw;
+        margin-right: 5%;
+    }
+    .section1 .pro-container .box .shopbox a {
+        font-size: 2vw;
+    }
+}
+
+
+/*/////////////////////////////////productdeatail///////////////////////////*/
